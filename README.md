@@ -3,7 +3,7 @@
   the history of the changes, and change users assiggned to the task.
   
 ###### Deployment
-  * [Link to AWS Task-Master](http://taskmaster-manish.us-west-2.elasticbeanstalk.com/taskmaster/v1/tasks)
+  * [Link to AWS Task-Master](http://taskmasteraws-dev.us-west-2.elasticbeanstalk.com/taskmaster/v1/tasks)
   
 ###### How to Test/Use
   * Use this route with "GET" to get all the tasks: "http://taskmaster-manish.us-west-2.elasticbeanstalk.com/taskmaster/v1/tasks"

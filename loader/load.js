@@ -15,12 +15,17 @@ let ddbClient = new AWS.DynamoDB.DocumentClient();
 const addRecord = (record) => {
 
   let params = {
-    TableName: 'people',
+    TableName: 'task',
     Item: {
       'id': uuid(),
-      'name': faker.name.firstName(),
-      'pic': faker.lorem.sentences(),
-      'old': faker.random.boolean()
+      'title': faker.lorem.sentences(),
+      'description': faker.lorem.sentences(),
+      'assignee': faker.name.findName(),
+      'status' : 'available',
+      'historyArrayList' : [{
+        'dateOfAction': Date.now(),
+        'advancement' : 'New task created'
+      }]
     }
   };
 
